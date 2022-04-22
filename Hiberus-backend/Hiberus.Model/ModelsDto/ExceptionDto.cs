@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hiberus.Model.ModelsDto
+{
+    public class ExceptionDto
+    { 
+        public string Code { get; set; }
+         
+        public string Message { get; set; }
+         
+        public Data Data { get; set; }
+         
+        public long HResult { get; set; }
+    }
+
+    public partial class Data
+    {
+    }
+}

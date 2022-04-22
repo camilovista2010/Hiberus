@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AzureFunctionsVersion>v4</AzureFunctionsVersion>
+    <DockerFastModeProjectMountDirectory>/home/site/wwwroot</DockerFastModeProjectMountDirectory>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+    <Company>Hiberus</Company>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <Product>Hiberus-backend</Product>
+    <AssemblyName>HiberusBackend</AssemblyName>
+    <Version>0.2.0-SNAPSHOT</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Hiberus.DataAccessLayer\**" />
+    <Compile Remove="Hiberus.Model\**" />
+    <Compile Remove="Hiberus.Services\**" />
+    <Compile Remove="Utils\**" />
+    <EmbeddedResource Remove="Hiberus.DataAccessLayer\**" />
+    <EmbeddedResource Remove="Hiberus.Model\**" />
+    <EmbeddedResource Remove="Hiberus.Services\**" />
+    <EmbeddedResource Remove="Utils\**" />
+    <None Remove="Hiberus.DataAccessLayer\**" />
+    <None Remove="Hiberus.Model\**" />
+    <None Remove="Hiberus.Services\**" />
+    <None Remove="Utils\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.1" />
+    <PackageReference Include="Azure.Identity" Version="1.5.0" />
+    <PackageReference Include="Azure.Security.KeyVault.Secrets" Version="4.3.0" />
+    <PackageReference Include="DarkLoop.Azure.Functions.Authorize" Version="3.1.0" />
+    <PackageReference Include="FluentValidation" Version="10.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.3" />
+    <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.OpenApi" Version="0.7.2-preview" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Hiberus.DataAccessLayer\Hiberus.DataAccessLayer.csproj" />
+    <ProjectReference Include="Hiberus.Model\Hiberus.Model.csproj" />
+    <ProjectReference Include="Hiberus.Services\Hiberus.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>

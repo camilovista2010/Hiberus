@@ -1,0 +1,11 @@
+﻿{
+  "IsEncrypted": false,
+  "Values": {
+    "POSTGRESQLCONNSTR_bddevHiberus": "Server=hiberus.postgres.database.azure.com;Database=hiberus;Port=5432;User Id=hiberus;Password=8i6er$s#80;",
+    "SECRETKEY": "21020a98-427d-44b7-9287-1b0366d58736",
+    "WEBSITE": "localhost:4071",
+    "TOKEN_DURATION_HOURS": "2400",
+    "API_URL": "http://quiet-stone-2094.herokuapp.com"
+  },
+  "Host": {"CORS": "*"}
+}

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiberusBackend", "HiberusBackend.csproj", "{A7197E6D-BA26-4FD2-A60F-0AA1DEAF5FAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiberus.DataAccessLayer", "Hiberus.DataAccessLayer\Hiberus.DataAccessLayer.csproj", "{420CF158-D27C-4250-BB2D-164475A3F5DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiberus.Model", "Hiberus.Model\Hiberus.Model.csproj", "{E1ED468B-F968-495C-A481-255181F2006D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiberus.Services", "Hiberus.Services\Hiberus.Services.csproj", "{E269F0B7-DCED-472A-B5BC-1254461345A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiberus.Test", "..\Hiberus.Test\Hiberus.Test.csproj", "{A546690C-3087-4252-A212-9626FAB937EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7197E6D-BA26-4FD2-A60F-0AA1DEAF5FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7197E6D-BA26-4FD2-A60F-0AA1DEAF5FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7197E6D-BA26-4FD2-A60F-0AA1DEAF5FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7197E6D-BA26-4FD2-A60F-0AA1DEAF5FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{420CF158-D27C-4250-BB2D-164475A3F5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420CF158-D27C-4250-BB2D-164475A3F5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420CF158-D27C-4250-BB2D-164475A3F5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420CF158-D27C-4250-BB2D-164475A3F5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1ED468B-F968-495C-A481-255181F2006D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1ED468B-F968-495C-A481-255181F2006D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1ED468B-F968-495C-A481-255181F2006D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1ED468B-F968-495C-A481-255181F2006D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E269F0B7-DCED-472A-B5BC-1254461345A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E269F0B7-DCED-472A-B5BC-1254461345A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E269F0B7-DCED-472A-B5BC-1254461345A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E269F0B7-DCED-472A-B5BC-1254461345A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A546690C-3087-4252-A212-9626FAB937EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A546690C-3087-4252-A212-9626FAB937EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A546690C-3087-4252-A212-9626FAB937EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A546690C-3087-4252-A212-9626FAB937EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {786B5A4E-E1B4-4B12-99BE-C2A8F0582D70}
+	EndGlobalSection
+EndGlobal
