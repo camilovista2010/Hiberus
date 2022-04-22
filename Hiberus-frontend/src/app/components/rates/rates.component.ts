@@ -20,7 +20,6 @@ export class RatesComponent implements OnInit {
     private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
-    this.loadRate();
   }
 
 

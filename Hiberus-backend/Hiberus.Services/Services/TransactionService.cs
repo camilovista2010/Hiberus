@@ -43,20 +43,10 @@ namespace Hiberus.Services.Services
         public ICollection<Transaction> GetTransactionBySku(string sku)
         {
             ICollection<Transaction> transactionsReturn = new List<Transaction>();
-            var transactionsApiItems = QuietApi.GetTransaction().Result;
-            if (transactionsApiItems.Count == 0)
+            transactionsReturn = TransactionDal.GetTransactionBySku(sku);
+            if (transactionsReturn == null)
             {
-                transactionsReturn = TransactionDal.GetTransactionBySku(sku);
-                if (transactionsReturn == null)
-                {
-                    throw new BusinessException(BusinessException.RESOURCE_NOT_FOUND, string.Format("Not found Transactions"));
-                }
-            }
-            else
-            {
-                TransactionDal.RemoveAllTransaction();
-                TransactionDal.AddRangeTransaction(transactionsApiItems);
-                transactionsReturn = transactionsApiItems.Where(x => x.Sku.Equals(sku)).ToList();
+                throw new BusinessException(BusinessException.RESOURCE_NOT_FOUND, string.Format("Not found Transactions"));
             }
             return transactionsReturn;
         }
