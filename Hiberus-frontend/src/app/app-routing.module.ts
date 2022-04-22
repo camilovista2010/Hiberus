@@ -5,10 +5,10 @@ const routes: Routes = [
   { path: '',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
     pathMatch: 'full' },
-  {
-    path: 'detail/{sku}',
-    loadChildren: () => import('./pages/detail/detail.module').then(m => m.DetailModule)
-  },
+    {
+      path: 'detail/:Sku',
+      loadChildren: () => import('./pages/detail/detail.module').then(m => m.DetailModule)
+    },
 ];
 
 @NgModule({

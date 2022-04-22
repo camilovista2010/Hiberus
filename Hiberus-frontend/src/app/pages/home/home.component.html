@@ -1,8 +1,11 @@
-<mat-grid-list cols="1" rowHeight="2:1">
-  <mat-grid-tile>
-    <app-rates></app-rates>
-  </mat-grid-tile>
-  <mat-grid-tile>
+<section class="mat-typography">
+  <h1>GNB (Gloiath National Bank)</h1>
+</section>
+<mat-tab-group>
+  <mat-tab label="Transaction">
     <app-transaction></app-transaction>
-  </mat-grid-tile>
-</mat-grid-list>
+  </mat-tab>
+  <mat-tab label="Rates">
+    <app-rates></app-rates>
+  </mat-tab>
+</mat-tab-group>
