@@ -30,7 +30,7 @@ export class ApiService extends BaseService {
   }
 
   transaction(): Promise<Array<Transaction>> {
-    return this.http.get<Array<Transaction>>(`${this.rootUrl}/${this.TransactionPath}`).toPromise() ;
+    return this.http.get<Array<Transaction>>(`${this.rootUrl}${this.TransactionPath}`).toPromise() ;
   }
 
   transactionBySku(params: {
